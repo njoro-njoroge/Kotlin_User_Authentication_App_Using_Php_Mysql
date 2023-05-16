@@ -14,7 +14,7 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 
-private const val BASE_URL = "http://192.168.0.112/hustle_free/api_endpoint/login_register_api/"
+private const val BASE_URL = "http://Your_ip_address/login_register_api/"
 
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
