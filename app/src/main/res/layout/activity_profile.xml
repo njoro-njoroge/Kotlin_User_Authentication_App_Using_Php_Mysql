@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Profile">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/card_view"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="10dp"
+            android:background="?selectableItemBackground"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/purple_700"
+            app:strokeWidth="1dp"
+            android:padding="10dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:drawableLeft="@drawable/ic_account"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Name"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_account"
+                    android:layout_marginStart="25dp"
+                    android:id="@+id/txv_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Username"
+                    android:drawableLeft="@drawable/ic_account"
+                    android:layout_marginStart="25dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/txv_username" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Phone number"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:layout_marginStart="25dp"
+                    android:id="@+id/txv_phoneNumber" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Email"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_mail"
+                    android:layout_marginStart="25dp"
+                    android:id="@+id/txv_email" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_logout"
+                    android:backgroundTint="@color/btnColor"
+                    android:text="Logout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</layout>
